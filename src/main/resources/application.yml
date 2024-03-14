@@ -1,0 +1,19 @@
+# spring.mvc.view.prefix=/WEB-INF/jsp/
+# spring.mvc.view.suffix=.jsp
+
+# spring.mvc.static-path-patter=/static/**
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/memo
+    username: root
+    password: root
+  mvc:
+    static-path-pattern: /static/**
+    view: 
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+mybatis:
+  mapper-locations: mappers/*Mapper.xml
+  
